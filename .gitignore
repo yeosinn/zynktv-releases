@@ -1,0 +1,6 @@
+﻿# Local temp and build files
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+*.pfx
