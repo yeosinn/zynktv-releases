@@ -1,5 +1,14 @@
 # Historial de Cambios (Changelog)
 
+## [v0.1.1-alpha] - 2026-09-26
+
+### Novedades y Correcciones
+- **Nuevo Logotipo Oficial 2D:** Sustituido el icono en el instalador, ejecutables, bandeja del sistema y componentes por el logotipo 2D oficial.
+- **Desduplicación Inteligente de Micrófonos:** Corregido el problema de visualización múltiple de auriculares/micrófonos en el Asistente de Inicio y en Ajustes.
+- **Soporte Deep Linking `zynktv://`:** Integrado el protocolo nativo en Windows para inicio de sesión instantáneo con Discord (OAuth2) con 1 clic.
+- **Apertura de Enlaces Externos:** Los botones de Discord, Ko-fi y web ahora se abren fluidamente en el navegador predeterminado del sistema.
+- **Firma Digital DigiCert:** Binarios C++ (`ZynkRecorder.exe`, `ffmpeg.exe`), instalador NSIS y app empaquetada con certificado SHA-256.
+
 ## [v0.1.0-alpha] - 2026-09-25
 
 ### Novedades
