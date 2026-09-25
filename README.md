@@ -56,5 +56,5 @@ Como Zynk TV es un proyecto independiente desarrollado por una sola persona y no
 
 ## 💬 Comunidad & Soporte
 
-- Discord Oficial: [discord.gg/zynktv](https://discord.gg/zynktv)
-- Web Oficial: [https://zynkapp.es](https://zynkapp.es)
+- Discord Oficial: [discord.gg/zynktv](https://discord.gg/hc7eFjcwXm)
+- Web Oficial: [https://zynkapp.es](https://zynktv.zynkapp.es/)
