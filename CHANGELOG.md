@@ -1,5 +1,10 @@
 # Historial de Cambios (Changelog)
 
+## [v0.1.4-alpha] - 2026-09-26
+
+### Novedades y Mejoras
+- Actualización de estabilidad, captura DirectX 11 y optimizaciones de rendimiento.
+
 ## [v0.1.3-alpha] - 2026-09-25
 
 ### Novedades y Mejoras
