@@ -1,2 +1,2 @@
-ca55c85daf744cfff135eaaa161ab18bdd9b722f7d4a73d50f6ce6fb861b3ace  ZynkTV-Setup-0.1.6.exe
-7557bc1e04af90756fed802bbf4cc7c1a14dfde114b7ba9b0bc363ce5b385200  ZynkTV-0.1.6-win.zip
+e551865a74bbbaf2445fae10363eb902ac330c2a4d6538af30e5f777f66554a6  ZynkTV-Setup-0.1.7.exe
+9224ed95f80c5d09218f48605f6a3b00de13ff12a461c9f55e7da111dd5ba29e  ZynkTV-0.1.7-win.zip
