@@ -1,5 +1,13 @@
 # Historial de Cambios (Changelog)
 
+## [v0.1.68-alpha] - 2026-10-02
+
+### Novedades y Mejoras
+- **Corrección de Buffer Inicializando:** Solucionado el bloqueo de buffer al clipear en juegos. Alineado el intervalo de fotogramas clave IDR (`-g 120` y `-forced-idr 1`) para que el multiplexor de segmentos divida el vídeo en directo cada pocos segundos sin quedar bloqueado.
+- **Grabación Fluida y Sin Lag:** Elevada la prioridad del proceso FFmpeg a `ABOVE_NORMAL_PRIORITY_CLASS`, codificación directa por hardware (NVENC, AMF, QSV) sin cuello de botella por marcas de agua en CPU.
+- **Nueva Splash Screen Cinemática:** Pantalla de carga flotante rediseñada con estética gamer/glassmorphism, emblema oficial "Z", aura de neón y barra de progreso holográfica.
+- **Logo Oficial Unificado:** Integración del logotipo oficial de alta fidelidad tanto en la Landing Page como en la aplicación de escritorio.
+
 ## [v0.1.67-alpha] - 2026-10-02
 
 ### Novedades y Mejoras
