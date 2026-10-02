@@ -1,5 +1,12 @@
 # Historial de Cambios (Changelog)
 
+## [v0.1.71-alpha] - 2026-10-02
+
+### Novedades y Mejoras
+- **Restauración Completa de FPS en Juego:** Prioridad de proceso devuelta a `BELOW_NORMAL_PRIORITY_CLASS` y eliminación de la sobrecarga de 4 GB en buffers de memoria, garantizando que el 100% de la CPU y GPU esté a disposición del juego.
+- **Marca de Agua Totalmente Restaurada:** La marca de agua (ZYNKTV + PLAYER: NOMBRE) vuelve a estar 100% operativa respetando el interruptor de Ajustes sin afectar el rendimiento.
+- **Cero Lagazos al Guardar Clip:** Guardado desacoplado y asíncrono que no bloquea la partida ni el Event Loop de Electron.
+
 ## [v0.1.70-alpha] - 2026-10-02
 
 ### Novedades y Mejoras
