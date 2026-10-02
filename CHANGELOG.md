@@ -1,5 +1,13 @@
 # Historial de Cambios (Changelog)
 
+## [v0.1.65-alpha] - 2026-10-02
+
+### Novedades y Mejoras
+- **Detección Local de Riot Games:** Vinculación 100% nativa y offline de Riot ID (Valorant) leyendo tu sesión local en PC, sin APIs de terceros ni fallos de token.
+- **Control de Grabación por Juego:** Interruptor maestro para decidir qué juegos grabar y cuáles ignorar, ahorrando 100% de GPU y CPU en títulos que no desees clipear.
+- **Indicador Visual [PAUSADO]:** Insignia en las carátulas del carrusel para identificar al instante qué títulos están excluidos de la grabación.
+- **Documentación Renovada:** Rediseño completo de la guía de lanzamientos oficiales con comparativas de rendimiento y verificación SHA-256.
+
 ## [v0.1.64-alpha] - 2026-10-02
 
 ### Novedades y Mejoras
