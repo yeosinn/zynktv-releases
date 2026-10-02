@@ -1,5 +1,13 @@
 # Historial de Cambios (Changelog)
 
+## [v0.1.69-alpha] - 2026-10-02
+
+### Novedades y Mejoras
+- **Cero Lagazos al Guardar Clip:** Desacoplamiento 100% asíncrono del guardado de clips. El atajo nativo F10 responde en <1ms sin bloquear el hilo del juego.
+- **Prioridad Inteligente de Stitcher:** El proceso de unión de vídeo se ejecuta con prioridad baja en segundo plano (`BELOW_NORMAL_PRIORITY_CLASS`), impidiendo que robe ciclos de CPU o ancho de banda de disco al juego en plena acción.
+- **Eliminación de Copia Síncrona Bloqueante:** Sustituido `fs.copyFileSync` por movimiento atómico instantáneo y respaldo asíncrono en Electron, eliminando congelaciones del Event Loop.
+- **Overlay HUD Fluido y Sin Tirones DWM:** Optimización de llamadas a nivel de ventana para evitar caídas de Direct Flip en juegos a pantalla completa (FiveM/GTA V).
+
 ## [v0.1.68-alpha] - 2026-10-02
 
 ### Novedades y Mejoras
