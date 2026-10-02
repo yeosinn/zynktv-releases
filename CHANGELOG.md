@@ -1,5 +1,13 @@
 # Historial de Cambios (Changelog)
 
+## [v0.1.67-alpha] - 2026-10-02
+
+### Novedades y Mejoras
+- **Grabación Fluida y Sin Lag:** Elevada la prioridad del proceso FFmpeg a `ABOVE_NORMAL_PRIORITY_CLASS`, flags de ultra-baja latencia para codificación por hardware (NVENC, AMF, QSV) y eliminación de cuellos de botella en memoria.
+- **Nueva Splash Screen Cinemática:** Pantalla de carga flotante rediseñada con estética gamer/glassmorphism, emblema oficial "Z", aura de neón y barra de progreso holográfica.
+- **Logo Oficial Unificado:** Integración del logotipo oficial de alta fidelidad tanto en la Landing Page como en la aplicación de escritorio.
+- **Estabilidad y Corrección de IPC:** Correcciones en el servicio de overlay para control de silent mode y volumen de Discord en el trimmer.
+
 ## [v0.1.66-alpha] - 2026-10-02
 
 ### Novedades y Mejoras
