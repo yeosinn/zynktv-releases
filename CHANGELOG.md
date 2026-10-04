@@ -1,5 +1,14 @@
 # Historial de Cambios (Changelog)
 
+## [v0.1.75-alpha] - 2026-10-04
+
+### Novedades y Mejoras
+- **Programa Partner & Creador Oficial:** Nueva insignia holográfica animada, panel Creator Hub con enlaces y códigos de afiliados personalizados (`tv.zynkapp.es/p/username`), contador de referidos en vivo y presencia exclusiva en Discord.
+- **Integración con Tom Clancy's Rainbow Six Siege:** Detección de rangos competitivos oficiales (Cobre hasta Champions), insignias en clips y vinculación con Ubisoft Connect.
+- **Discord Rich Presence Robusto:** Conexión IPC blindada contra cierres por BattlEye y soporte para estados dinámicos de Partner.
+- **Filtro Avanzado Anti-Trampas y Launchers:** Detección precisa de ventanas jugables en Escape from Tarkov y Rainbow Six Siege, bloqueando ventanas splash y procesos de BattlEye/EasyAntiCheat/Ubisoft Connect.
+- **Clip Vault y Marcas de Tiempo:** Las marcas de tiempo relativas ahora se actualizan en vivo ("Ahora mismo", "Hace X min", "Hoy", "Ayer") reflejando la fecha real de captura.
+
 ## [v0.1.74-alpha] - 2026-10-03
 
 ### Novedades y Mejoras
