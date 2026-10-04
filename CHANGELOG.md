@@ -1,5 +1,13 @@
 # Historial de Cambios (Changelog)
 
+## [v0.1.80-alpha] - 2026-10-04
+
+### ⚡ Fix Sincronización A/V, Eliminación de Halo Blanco y Cero Lag al Clipear
+- **Sincronización Matemática Audio/Video:** Corregido el pacer de video nativo en C++. Ya no se inyectan frames duplicados por adelantado cuando el temporizador de Windows despierta temprano, manteniendo el video perfectamente sincronizado con el stream de audio a 48 kHz. Además, el inicio de grabación se sincroniza al milisegundo con el primer paquete de audio WASAPI.
+- **Eliminación del Halo Blanco en Overlay:** Eliminados todos los filtros `backdrop-blur` y auras difusas que generaban una caja/halo blanco en el compositor DWM sobre ventanas transparentes de Windows. Cápsulas estilizadas con fondo oscuro puro, bordes nítidos y sombras limpias.
+- **Guardado de Clips Instantáneo (Cero Lag):** Eliminado `-movflags +faststart` y asignada prioridad `IDLE_PRIORITY_CLASS` al concatenador de FFmpeg. Se eliminó la relectura y reescritura masiva de datos en disco en pleno juego competitivo, logrando guardado en menos de 1 segundo sin caídas de FPS.
+- **Sincronización del Overlay HUD:** Aumentado el temporizador de guardado a 45s. El cronómetro permanece visible de forma continua hasta recibir la confirmación de clip guardado, transformándose de forma fluida en la píldora verde de éxito sin desaparecer a los 11 segundos.
+
 ## [v0.1.79-alpha] - 2026-10-04
 
 ### ⚡ Fix Sesión Continua, Velocidad de Bot y Optimización de Inicio
