@@ -1,5 +1,15 @@
 # Historial de Cambios (Changelog)
 
+## [v0.1.78-alpha] - 2026-10-04
+
+### ⚡ Zynk Engine 1.5 & Super Actualización Oficial
+- **Zynk Engine 1.5 (Motor Gráfico C++ Nativo):** Rediseñado con Triple-Buffering real Direct3D 11 y DMA asíncrono (2 frames de antelación), eliminando bloqueos de renderizado en GPU. Mapeo no bloqueante `D3D11_MAP_FLAG_DO_NOT_WAIT` para cero tirones en juegos a altas tasas de refresco (144Hz - 240Hz+).
+- **Ampliación de Tubería FFmpeg a 64 MB:** Ancho de banda de tubería cuadruplicado para permitir capturas y replays fluidos en 1080p, 1440p (2K) y 2160p (4K) sin saturación ni congelamiento de fotogramas.
+- **Codificación NVENC & AMF Ultra-Low Latency:** Ajuste de latencia ultra baja (`-preset p1 -tune ull -zerolatency 1 -surfaces 2`) y prioridad de hilo `THREAD_PRIORITY_HIGHEST` con precisión multimedia de 1 ms (`timeBeginPeriod`).
+- **Separación de Rangos de Comunidad y Suscripción Premium:** Los usuarios ahora pueden tener simultáneamente su Rol Oficial (`STAFF`, `PARTNER`, `MODERADOR`) y su Suscripción (`VIP PASS`), con aros holográficos y coronas doradas combinadas.
+- **Blindaje de Ciberseguridad del Backend:** Validación criptográfica inmutable mediante Discord Snowflakes de 64 bits para cuentas administrativas, eliminando nombres/emojis vulnerables a suplantación.
+- **Fix Discord Rich Presence:** Corrección del icono gigante `?` y enlaces CDN verificados con respuesta HTTP 200.
+
 ## [v0.1.77-alpha] - 2026-10-04
 
 ### ⚡ Zynk Engine 1.5 & Super Actualización Oficial
