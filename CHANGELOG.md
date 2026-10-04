@@ -1,5 +1,12 @@
 # Historial de Cambios (Changelog)
 
+## [v0.1.79-alpha] - 2026-10-04
+
+### ⚡ Fix Sesión Continua, Velocidad de Bot y Optimización de Inicio
+- **Fix Clipeo Sesión Continua:** Solucionado el bug por el cual las grabaciones continuas se recortaban artificialmente a 60 segundos (1 minuto). Ahora la persistencia de `recordingMode` en Electron y el buffer nativo C++ protegen todos los fragmentos acumulados desde el minuto 1 de la partida sin límite de tiempo.
+- **Bot de Discord de Alta Velocidad (Keep-Alive):** Implementado pool de conexiones persistentes HTTP Keep-Alive (`undici`) y micro-caché en memoria con TTL en los comandos `/clip`, `/top`, `/perfil` y optimización en lote para `/setrank` eliminando handshakes redundantes y retrasos de red.
+- **Eliminación Total del Lagazo al Iniciar la App:** Se pospuso el escaneo Win32 (`EnumWindows`) y la verificación de actualizaciones tras la carga, permitiendo que la ventana principal renderice a 60 FPS inmediatamente sin frame drops.
+
 ## [v0.1.78-alpha] - 2026-10-04
 
 ### ⚡ Zynk Engine 1.5 & Super Actualización Oficial
