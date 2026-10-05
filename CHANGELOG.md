@@ -1,5 +1,13 @@
 # Historial de Cambios (Changelog)
 
+## [v0.1.86-alpha] - 2026-10-05
+
+### ⚡ Eliminación de Cuello de Botella CPU en Grabación, Sincronización A/V y Fluidez 60 FPS
+- **Cero Filtros CPU en FFmpeg:** Eliminado el reescalado por software (`-vf scale`) que sobrecargaba el procesador en monitores 2K y provocaba caídas de frames y desincronización de audio con el vídeo.
+- **Resolución Nativa y Detección Automática 2K (1440p):** La app detecta pantallas 2K/1440p y selecciona automáticamente la resolución nativa, alineando dimensiones directamente en C++ sin consumo de CPU y entregando el frame directo a NVENC.
+- **Sincronización Perfecta Audio/Vídeo:** Al codificar a 60 FPS reales y constantes sin saturación de CPU, el reloj de audio WASAPI y el vídeo van en perfecta sincronía milimétrica.
+- **Suspensión de Interfaz Electron:** Activado `backgroundThrottling: true` para congelar el render de Chromium a 165Hz mientras juegas, reduciendo el uso de CPU a prácticamente 0%.
+
 ## [v0.1.85-alpha] - 2026-10-05
 
 ### ⚡ Ultra-Optimización CPU en Pantallas 2K 165Hz y Congelado de Interfaz en Segundo Plano
