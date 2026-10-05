@@ -1,5 +1,14 @@
 # Historial de Cambios (Changelog)
 
+## [v0.1.83-alpha] - 2026-10-05
+
+### ⚡ Optimización 2K/1440p (CPU <5%), Badge Editado Persistente, Icono de Tijeras y Fix de Sesión
+- **Zero Overhead CPU en 2K (1440p / 165Hz):** Eliminado el filtro por software de reescalado FFmpeg cuando la resolución coincide con la pantalla nativa. La señal de captura se codifica directamente en hardware NVENC de la GPU, reduciendo el consumo de CPU de 23% a <5%.
+- **Optimización de Renderizado en Segundo Plano:** El bucle de animación de Electron congela los repintados cuando la app se minimiza o el juego se ejecuta a pantalla completa, eliminando consumo residual.
+- **Insignia 'Editado' Persistente:** Al renombrar o exportar un clip desde el Vault o Trimmer, la etiqueta ámbar 'Editado' se guarda en el archivo de metadatos permanente.
+- **Icono de Tijeras en Vault:** Sustituido el botón textual 'Trim' por un botón de acción con icono de tijeras y micro-animación en hover.
+- **Limpieza de Búfer al Salir de Partidas:** En modo repetición continua (Buffer / F8), al cerrar el juego o la app se purga el búfer sin auto-guardar toda la sesión anterior en vídeos gigantes.
+
 ## [v0.1.82-alpha] - 2026-10-05
 
 ### ⚡ Fix Sincronización A/V, Eliminación de Halo Blanco y Cero Lag al Clipear
