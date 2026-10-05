@@ -1,5 +1,12 @@
 # Historial de Cambios (Changelog)
 
+## [v0.1.84-alpha] - 2026-10-05
+
+### ⚡ Fix Clip Vault Vacío, Solución Uncaught Exception 'store' y Descarga Total NVENC GPU
+- **Fix Crítico de Carga en Clip Vault:** Corregida la referencia no definida a store en el proceso principal de Electron. Se eliminó la ventana de error Uncaught Exception y todos los clips locales se indexan y muestran instantáneamente en el Vault.
+- **Descarga Total de Conversión de Color en GPU NVENC:** La conversión de espacio de color BGRA a YUV420 se realiza directamente en silicio de la GPU NVIDIA mediante `-rgb_mode yuv420`, eliminando por completo el filtro CPU `format=nv12` en WGC. Máxima fluidez a 1440p (2K) @ 60 FPS con mínimo consumo de CPU.
+- **Discord Rich Presence Fiable:** Fijado el PID oficial de Zynk TV en el protocolo Discord IPC para evitar conflictos y asegurar estado `Clipeando [F8]`.
+
 ## [v0.1.83-alpha] - 2026-10-05
 
 ### ⚡ Optimización 2K/1440p (CPU <5%), Badge Editado Persistente, Icono de Tijeras y Fix de Sesión
