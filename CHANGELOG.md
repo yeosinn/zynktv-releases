@@ -1,5 +1,11 @@
 # Historial de Cambios (Changelog)
 
+## [v0.1.85-alpha] - 2026-10-05
+
+### ⚡ Ultra-Optimización CPU en Pantallas 2K 165Hz y Congelado de Interfaz en Segundo Plano
+- **Congelado de Interfaz Electron en Background:** Activado `backgroundThrottling: true` en la ventana principal. Cuando juegas a pantalla completa o la ventana no está visible, Chromium congela los repintados a 165 FPS, reduciendo el consumo de CPU de la interfaz de 7.0% a prácticamente 0%.
+- **Optimización de Animación Dock:** Duplicada la eficiencia del bucle de animación a 120ms para reducir los renders de React a la mitad sin perder fluidez visual.
+
 ## [v0.1.84-alpha] - 2026-10-05
 
 ### ⚡ Fix Clip Vault Vacío, Solución Uncaught Exception 'store' y Descarga Total NVENC GPU
