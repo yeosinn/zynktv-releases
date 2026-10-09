@@ -1,5 +1,14 @@
 # Historial de Cambios (Changelog)
 
+## [v0.1.87-alpha] - 2026-10-09
+
+### ⚡ Modo 30 FPS para FiveM, Fix de Alt-Tab, Apertura Instantánea y Solución de Ventana en PAUSA
+- **Opción de 30 FPS Nativa:** Añadida la opción de 30 FPS en los ajustes y popovers de grabación, ideal para FiveM o PCs justos, reduciendo a la mitad el tráfico de memoria y la carga de codificación.
+- **Sincronización Milimétrica Audio/Vídeo:** Ajustado el pacing de fotogramas en C++ con micro-yield suave para que cualquier caída del juego no genere desincronización acumulativa con el reloj de audio WASAPI.
+- **Apertura de Ventana Instantánea y DirectComposition:** Eliminado el modo transparente que congelaba el ratón con DWM en Windows. Añadido temporizador de seguridad de 2.5s y forzado de foco para garantizar que la ventana siempre se abra al hacer click o desde el tray.
+- **Soporte Fluido de Alt-Tab:** La app ya no se pone en 'PAUSA' ni descarta el juego al cambiar a Discord o al navegador web mientras el juego sigue en ejecución.
+- **Eliminación del Interbloqueo en PAUSA:** Al cerrar un juego se libera de inmediato el buffer y se detecta cualquier nuevo juego que abras sin quedarse atascado.
+
 ## [v0.1.86-alpha] - 2026-10-05
 
 ### ⚡ Eliminación de Cuello de Botella CPU en Grabación, Sincronización A/V y Fluidez 60 FPS
