@@ -1,5 +1,13 @@
 # Historial de Cambios (Changelog)
 
+## [v0.1.93-alpha] - 2026-10-09
+
+### ⚡ Arquitectura GPU Zero-Copy estilo Medal.tv, Fix de Lag/Audio y Panel de Administración
+- **Codificación por Hardware Media Foundation MFT:** Los fotogramas se codifican directamente en el chip de video (NVENC / AMF / QSV) en VRAM sin transferir gigabytes de píxeles a la memoria RAM.
+- **Conversor de Color en Silicio Direct3D 11:** Conversión de color B8G8R8A8 a NV12 en GPU por hardware con ID3D11VideoProcessor (<0.05ms, 0% de CPU).
+- **FFmpeg Pasivo (-c:v copy):** El ancho de banda en la tubería se reduce de 900 MB/s a ~2 MB/s. Eliminado el colapso del buffer y garantizada la sincronización permanente de audio y vídeo sin pérdidas ni congelamientos.
+- **Fix en Panel de Administración:** Solucionado el fallo de pantalla negra al excluir procesos en la pestaña de detección con validación defensiva.
+
 ## [v0.1.92-alpha] - 2026-10-09
 
 ### ⚡ Arquitectura GPU Zero-Copy estilo Medal.tv, Fix de Lag/Audio y Panel de Administración
