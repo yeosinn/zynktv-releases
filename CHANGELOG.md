@@ -1,5 +1,13 @@
 # Historial de Cambios (Changelog)
 
+## [v0.1.105-alpha] - 2026-10-09
+
+### ⚡ Fix de Ventana de Juego, Soporte 2K (1440p), Hotkey Limpio y Modo Sesión Completa
+- **Fijación Robusta de Ventana:** Resuelto el problema de captura errónea de escritorio al cambiar de juego mediante reseteo de objetivos manuales y enlace directo de HWND en el popover.
+- **Detección y Arranque Nativo en 2K (1440p):** Sincronización automática de resolución en el arranque para monitores 2K (20 Mbps) evitando que el motor inicie en 1080p por defecto.
+- **Hotkey Desactivado por Defecto:** Eliminado el atajo F8 hardcodeado en C++; el motor ahora responde exclusivamente a la combinación personalizada guardada por el usuario.
+- **Sesión Completa Sin Clips Atrasados:** Purga física de fragmentos .ts residuales de partidas previas y reinicio automático de temporizadores al dividir o guardar sesión.
+
 ## [v0.1.104-alpha] - 2026-10-09
 
 ### ⚡ Fix de Ventana de Juego, Soporte 2K (1440p), Hotkey Limpio y Modo Sesión Completa
