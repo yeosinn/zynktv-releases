@@ -1,5 +1,13 @@
 # Historial de Cambios (Changelog)
 
+## [v0.1.95-alpha] - 2026-10-09
+
+### ⚡ Fix de Indexación de Segmentos .ts, Named Pipe Asíncrono y Anti-Doble Arranque
+- **Indexación Instantánea de Segmentos .ts:** Expresión regular ultra-permisiva en telemetría de FFmpeg y escaneo físico directo en disco antes de guardar el clip para garantizar 100% de segmentos READY.
+- **Named Pipe Asíncrono no Bloqueante (OVERLAPPED):** Tubería de audio de FFmpeg configurada con FILE_FLAG_OVERLAPPED y timeout de seguridad para evitar bloqueos y pausas infinitas al arrancar.
+- **Protección Anti-Doble Arranque en Electron:** Debounce y control de estado para evitar colisiones de Named Pipes al detectar subprocesos o cambios de ventana (e.g. FiveM o Rainbow Six Siege).
+- **WASAPI Dynamic Loopback:** Negociación en tiempo real de la tasa de muestreo del dispositivo de audio con transcodificación PCM s16le a baja latencia.
+
 ## [v0.1.94-alpha] - 2026-10-09
 
 ### ⚡ Arquitectura GPU Zero-Copy estilo Medal.tv, Fix de Lag/Audio y Panel de Administración
